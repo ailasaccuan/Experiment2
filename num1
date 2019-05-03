@@ -1,0 +1,44 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+int main()
+{
+	int  hrs, pay;
+	char plan;
+	cout << "Enter internet package purcased (A-C): "; cin >> plan;
+	cout << "Enter how many hours used: "; cin >> hrs;
+
+	switch (plan)
+	{
+	case 'A':
+	case 'a':
+		cout << "Your internet subscription is Package A. \n";
+		if ( hrs > 10 )
+		{pay = 995 + ((hrs-10)*20);
+		cout << "Your total amount due is: Php " << pay << endl;}
+		else 
+		cout << "Your total amount due is: Php 995 " << endl;
+		break;
+	case 'B':
+	case 'b':
+		cout << "Your internet subscription is Package B. \n";
+		if ( hrs > 20 )
+		{pay = 1495 + ((hrs-20)*10);
+		cout << "Your total amount due is: Php " << pay;}
+		else 
+		cout << "Your total amount due is: Php 1495 " << endl;
+		break;
+	case 'C':
+	case 'c':
+		cout << "Your internet subscription is Package C. \n";
+		pay = 1995;
+		cout << "Your total amount due is: Php " << pay;
+		break;
+	default:
+		cout << "That package does not exist. Enter a package from A-C.";
+	}
+
+	_getch(); 
+	return 0;
+}
