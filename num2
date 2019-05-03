@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	int dem, late, galUsed;
+	float galCharge, unpaid, totalPay, pay;
+	dem = 35, late = 20, galCharge = 1.10;
+
+	cout << "This system computes you water bill for this month\n" << endl;
+	cout << "Enter how many gallons you've consumed since last reading: "; cin >> galUsed;
+	cout << "If you have any unpaid charges, please enter here how much: "; cin >> unpaid;
+
+	pay = (galUsed * galCharge) + dem;
+	if (unpaid > 0)
+		{totalPay = pay + late;
+		cout << "\nYou are to pay: Php " << totalPay << " this month." << endl;}
+	else
+		cout << "\nYou are to pay: Php " << pay << " this month." << endl;
+
+
+	_getch();
+	return 0;
+}
