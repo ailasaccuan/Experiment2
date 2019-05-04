@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	int num, addend, sum;
+	
+	cout << "Let's add numbers!" << endl;
+	do
+	{
+	cout << "Enter a number: "; cin >> num;
+	
+	sum = 0;
+	for (addend = 0; addend <= num; addend++)
+		{
+			sum += addend;
+		}
+	if (num > 0)
+		{
+			cout << "The sum from 1 to your entered number is: " << sum << "\n";
+		}
+	else
+		cout << "End of calculation.";
+	} while (num > 0);
+
+
+	_getch();
+	return 0;
+}
