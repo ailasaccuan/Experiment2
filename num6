@@ -1,0 +1,23 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	int k, n, x[21];
+	x[0]=0;
+	x[1]=1;
+
+	for (k = 2; k <= 21; k++)
+	{
+		x[k] = x[k-2] + x[k-1];
+	}
+	for (n = 0; n < 21; n++)
+	{
+		cout << x[n] << ",";
+	}
+	cout << "10946";
+
+	_getch();
+	return 0;
+}
