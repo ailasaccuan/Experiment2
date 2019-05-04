@@ -1,0 +1,20 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	 int multi, cand, prod;
+	 
+	 cout << "The multiplication table!\n";
+	 cout << "Enter a multiplier of choice: "; cin >> multi;
+
+	 for (cand = 1; cand <= 10; cand++)
+	 {
+	  prod = multi * cand;
+	  cout << multi << " * " << cand << " = " << prod << "\n";
+	 }
+
+	_getch();
+	return 0;
+}
