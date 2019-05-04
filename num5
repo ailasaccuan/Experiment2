@@ -1,0 +1,24 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	int k;
+
+	for (k = 1; k <= 10; k++)
+	{
+		if (k == 10) continue;
+		cout << k << ",";
+	}
+
+	
+	for (k = 10 ; k <= 28; k += 2)
+	{
+		cout << k << ",";
+	}
+	cout << "30";
+
+	_getch();
+	return 0;
+}
