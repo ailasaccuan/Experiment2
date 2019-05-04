@@ -1,0 +1,25 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	 int row, col;
+
+	 cout << "How many rows do you want? "; cin >> row;
+	 cout << "How many columns do you want? "; cin >> col;
+	
+		for (int x = 1; x <= col; x++)
+		 {
+			for (int y = 1; y <= row; y++)
+				{
+						cout << "*";
+				}
+				cout << "\n";
+		 }
+
+	_getch();
+	return 0;
+}
